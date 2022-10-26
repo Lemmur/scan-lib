@@ -1,6 +1,6 @@
 {
   "name": "scan-lib",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "description": "Scanning Library",
   "author": "Lemmur",
   "license": "MIT",
@@ -22,7 +22,9 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jsstore": "^4.4.4"
+  },
   "peerDependencies": {
     "react": "^16.9.0"
   },
@@ -38,6 +40,7 @@
     "@types/jest": "^23.3.13",
     "@types/react": "^16.7.22",
     "cross-env": "^5.2.0",
+    "file-loader": "^6.2.0",
     "gh-pages": "^2.0.1",
     "react": "^16.9.0",
     "react-scripts": "^3.4.0",

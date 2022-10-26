@@ -18,12 +18,13 @@ import * as React from 'react'
 import { useMyHook } from 'scan-lib'
 
 const Example = () => {
-  const example = useMyHook()
-  return (
+  const { tree, treeLoading, setSelected, selected, setExpanded, expanded, setChecked, checked, getOrderedChildrenById, moveNodes } = useScanTree(ROOT);
+  
+  return !treeLoading ? (
     <div>
-      {example}
+      { JSON.stringify(tree) }
     </div>
-  )
+  ) : (<>Loading...</>);
 }
 ```
 
@@ -31,6 +32,3 @@ const Example = () => {
 
 MIT © [Lemmur](https://github.com/Lemmur)
 
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
