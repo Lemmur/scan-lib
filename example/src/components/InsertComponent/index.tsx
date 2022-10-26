@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useScanTree, NODE_TYPES } from "scan-lib";
+import { useScanTree, NODE_TYPES } from './../../lib';
 import { useState } from "react";
 
 const InsertComponent = ({ onOpenSecondTree }) => {

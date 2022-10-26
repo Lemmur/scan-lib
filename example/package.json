@@ -33,7 +33,6 @@
     "jsstore": "^4.4.4",
     "rc-tree": "^5.7.0",
     "react": "file:../node_modules/react",
-    "react-dom": "^16.13.1",
-    "scan-lib": ".."
+    "react-dom": "^16.13.1"
   }
 }

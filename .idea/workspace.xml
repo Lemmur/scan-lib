@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5824057b-8dff-4a9b-9416-064fe2124728" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/src/components/InsertComponent/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/src/components/Tree/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/src/components/TreeNew/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scan-lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scan-lib.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/lib.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/components/InsertComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/components/InsertComponent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/components/Tree/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/components/Tree/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/components/TreeNew/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/components/TreeNew/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/example/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/example/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useScanTree.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useScanTree.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +45,16 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.start:dev (1)">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/package.json" />
       <command value="run" />
@@ -76,16 +70,6 @@
       <command value="run" />
       <scripts>
         <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -114,10 +98,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start:dev (1)" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start:dev (2)" />
         <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -133,12 +117,24 @@
       <updated>1666787378228</updated>
       <workItem from="1666787379358" duration="4894000" />
       <workItem from="1666798839795" duration="510000" />
-      <workItem from="1666799891069" duration="1806000" />
+      <workItem from="1666799891069" duration="5394000" />
     </task>
+    <task id="LOCAL-00001" summary="Watcher fixes">
+      <created>1666803388876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666803388876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Watcher fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Watcher fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="762" y="391" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1666799281493">
@@ -149,25 +145,29 @@
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
     <state x="731" y="347" key="#start:dev/0.0.2048.1280@0.0.2048.1280" timestamp="1666788062581" />
-    <state x="613" y="239" key="CommitChangelistDialog2" timestamp="1666803340322">
+    <state x="613" y="239" key="CommitChangelistDialog2" timestamp="1666803388674">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state x="613" y="239" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1666803340322" />
-    <state width="2027" height="549" key="GridCell.Tab.0.bottom" timestamp="1666803287085">
+    <state x="613" y="239" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1666803388674" />
+    <state width="2027" height="491" key="GridCell.Tab.0.bottom" timestamp="1666807140634">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2027" height="549" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287085" />
-    <state width="2027" height="549" key="GridCell.Tab.0.center" timestamp="1666803287084">
+    <state width="2027" height="491" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1666807140634" />
+    <state width="2027" height="491" key="GridCell.Tab.0.center" timestamp="1666807140632">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2027" height="549" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287084" />
-    <state width="2027" height="549" key="GridCell.Tab.0.left" timestamp="1666803287083">
+    <state width="2027" height="491" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1666807140632" />
+    <state width="2027" height="491" key="GridCell.Tab.0.left" timestamp="1666807140632">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2027" height="549" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287083" />
-    <state width="2027" height="549" key="GridCell.Tab.0.right" timestamp="1666803287084">
+    <state width="2027" height="491" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1666807140632" />
+    <state width="2027" height="491" key="GridCell.Tab.0.right" timestamp="1666807140633">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2027" height="549" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287084" />
+    <state width="2027" height="491" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1666807140633" />
+    <state x="624" y="377" key="Vcs.Push.Dialog.v2" timestamp="1666803390459">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="624" y="377" key="Vcs.Push.Dialog.v2/0.0.2048.1280@0.0.2048.1280" timestamp="1666803390459" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useScanTree, NODE_TYPES, TNode } from 'scan-lib';
+import { useScanTree, NODE_TYPES, TNode } from './../../lib';
 import Tree, { TreeNode } from "rc-tree/lib";
 import { useEffect, useState } from "react";
 

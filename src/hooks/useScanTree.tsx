@@ -7,7 +7,28 @@ const emit = (type: string, data?: any): void => {
     document.dispatchEvent(event);
 };
 
-export function useScanTree(rootId: TNode['id']) {
+export type UseScanTreeHook = {
+    tree: TNode | null;
+    treeLoading: boolean;
+    selected: TNode['id'][];
+    checked: TNode['id'][];
+    expanded: TNode['id'][];
+
+    setSelected(keys: TNode['id'][]): void;
+    setChecked(keys: TNode['id'][]): void;
+    setExpanded(keys: TNode['id'][]): void;
+    deleteNode(id: TNode['id']): void;
+    updateNode(id: TNode['id'], data: TNode): void;
+    insertNode(node: TNode): Promise<void>;
+    getLastChild(parentId: TNode['parentId']): Promise<TNode>;
+    getFirstChild(parentId: TNode['parentId']): Promise<TNode>;
+    getNodeById(id: TNode['id']): Promise<TNode>;
+    getOrderedChildrenById(parentId: TNode['parentId']): Promise<TNode[]>;
+    moveNodes(ids: TNode['id'][], newParentId: TNode['id'], prevId: TNode['id'], nextId: TNode['id']): void;
+    sortTree(rootNode: TNode): Promise<void>;
+};
+
+export function useScanTree(rootId: TNode['id']): UseScanTreeHook {
     const STORE = TABLE_NAMES.NODES;
 
     const [ tree, setTree ] = useState<TNode | null>(null);
@@ -85,7 +106,7 @@ export function useScanTree(rootId: TNode['id']) {
     }, []);
 
 
-    const insertNode = async (node: TNode) => {
+    const insertNode = async (node: TNode): Promise<void> => {
         try {
             await treeService.addNode(node);
             emit(STORE);
@@ -98,18 +119,14 @@ export function useScanTree(rootId: TNode['id']) {
         return treeService.getOrderedChildrenById(parentId);
     };
 
-    const deleteNode = (id: TNode['id']) => {
+    const deleteNode = (id: TNode['id']): void => {
         treeService.removeNodes([ id ]).then(() => {
             emit(STORE)
         });
     };
 
-    const updateNode = async (id: TNode['id'], data: TNode) => {
-        const node = await treeService.getNodeById(id);
-        treeService.updateNodeById(id, {
-            ...node[0],
-            ...data
-        }).then(() => {
+    const updateNode = (id: TNode['id'], data: TNode): void => {
+        treeService.updateNodeById(id, data).then(() => {
             emit(STORE)
         });
     };
@@ -122,11 +139,11 @@ export function useScanTree(rootId: TNode['id']) {
         return treeService.getFirstChild(parentId);
     };
 
-    const moveNodes = (ids: TNode['id'][], newParentId: TNode['id'], prevId: TNode['id'], nextId: TNode['id']) => {
+    const moveNodes = (ids: TNode['id'][], newParentId: TNode['id'], prevId: TNode['id'], nextId: TNode['id']): void => {
         treeService.moveNodes(ids, newParentId, prevId, nextId).then(() => emit(STORE));
     };
 
-    const sortTree = async (rootNode: TNode) => {
+    const sortTree = async (rootNode: TNode): Promise<void> => {
         try {
             await treeService.sortTree(rootNode);
             emit(STORE);

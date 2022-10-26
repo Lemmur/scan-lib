@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { initJsStore } from 'scan-lib';
+import { initJsStore } from './lib';
 
 import App from './App';
 
