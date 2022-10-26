@@ -7,28 +7,7 @@ const emit = (type: string, data?: any): void => {
     document.dispatchEvent(event);
 };
 
-export type UseScanTreeHook = {
-    tree: TNode | null;
-    treeLoading: boolean;
-    selected: TNode['id'][];
-    checked: TNode['id'][];
-    expanded: TNode['id'][];
-
-    setSelected(keys: TNode['id'][]): void;
-    setChecked(keys: TNode['id'][]): void;
-    setExpanded(keys: TNode['id'][]): void;
-    deleteNode(id: TNode['id']): void;
-    updateNode(id: TNode['id'], data: TNode): void;
-    insertNode(node: TNode): Promise<void>;
-    getLastChild(parentId: TNode['parentId']): Promise<TNode>;
-    getFirstChild(parentId: TNode['parentId']): Promise<TNode>;
-    getNodeById(id: TNode['id']): Promise<TNode>;
-    getOrderedChildrenById(parentId: TNode['parentId']): Promise<TNode[]>;
-    moveNodes(ids: TNode['id'][], newParentId: TNode['id'], prevId: TNode['id'], nextId: TNode['id']): void;
-    sortTree(rootNode: TNode): Promise<void>;
-};
-
-export function useScanTree(rootId: TNode['id']): UseScanTreeHook {
+export function useScanTree(rootId: TNode['id']) {
     const STORE = TABLE_NAMES.NODES;
 
     const [ tree, setTree ] = useState<TNode | null>(null);
