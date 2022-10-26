@@ -1,6 +1,6 @@
 {
   "name": "scan-lib",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Scanning Library",
   "author": "Lemmur",
   "license": "MIT",
@@ -14,6 +14,8 @@
     "npm": ">=5"
   },
   "scripts": {
+    "start:dev": "concurrently --kill-others \"rollup -c -w\" \"cd ./example && npm run start:dev\"",
+    "dev": "rollup -c -w",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c && tsc -d --emitDeclarationOnly --noEmit false --declarationDir dist",
@@ -39,6 +41,7 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/jest": "^23.3.13",
     "@types/react": "^16.7.22",
+    "concurrently": "^7.5.0",
     "cross-env": "^5.2.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^2.0.1",

@@ -1,4 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5824057b-8dff-4a9b-9416-064fe2124728" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/components/InsertComponent/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/components/Tree/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/components/TreeNew/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scan-lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scan-lib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2GfWzQ1boBLNseORevLy3FgYP2s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/example" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/example" />
+      <recent name="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start:dev (1)">
+    <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../../framework-for-building-libraries/front-end/example/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev (1)" />
+        <item itemvalue="npm.start:dev (2)" />
+        <item itemvalue="npm.build:prod" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5824057b-8dff-4a9b-9416-064fe2124728" name="Default Changelist" comment="" />
+      <created>1666787378228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666787378228</updated>
+      <workItem from="1666787379358" duration="4894000" />
+      <workItem from="1666798839795" duration="510000" />
+      <workItem from="1666799891069" duration="1806000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="762" y="391" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1666799281493">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="762" y="391" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1280@0.0.2048.1280" timestamp="1666799281493" />
+    <state x="731" y="347" key="#start:dev" timestamp="1666788062581">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="731" y="347" key="#start:dev/0.0.2048.1280@0.0.2048.1280" timestamp="1666788062581" />
+    <state x="613" y="239" key="CommitChangelistDialog2" timestamp="1666803340322">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="613" y="239" key="CommitChangelistDialog2/0.0.2048.1280@0.0.2048.1280" timestamp="1666803340322" />
+    <state width="2027" height="549" key="GridCell.Tab.0.bottom" timestamp="1666803287085">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2027" height="549" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287085" />
+    <state width="2027" height="549" key="GridCell.Tab.0.center" timestamp="1666803287084">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2027" height="549" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287084" />
+    <state width="2027" height="549" key="GridCell.Tab.0.left" timestamp="1666803287083">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2027" height="549" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287083" />
+    <state width="2027" height="549" key="GridCell.Tab.0.right" timestamp="1666803287084">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2027" height="549" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1666803287084" />
+  </component>
 </project>
